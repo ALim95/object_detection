@@ -8,7 +8,7 @@ Returned Checksum for Selected Submission #2:
 
 
 Short Description of Selected Submission #1:
-The following the changes to the model:
+The following is the changes to the model:
   -Modified backbone mobilenet_v1 to resnet_101_v1_fpn.
   -Changed the ssd_anchor_generator to multiscale_anchor_generator.
   -Adjust image resizer from 100,300 to 256,768, keeping the aspect ratio.
