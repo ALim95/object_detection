@@ -8,9 +8,20 @@ Returned Checksum for Selected Submission #2:
 
 
 Short Description of Selected Submission #1:
-E.g., we modified the backbone mobilenet_v1 to mobilenet_v2, then train the model from the scratch
-until 40k steps, which gives us public leaderboard score 0.2453
+The following the changes to the model:
+  -Modified backbone mobilenet_v1 to resnet_101_v1_fpn.
+  -Changed the ssd_anchor_generator to multiscale_anchor_generator.
+  -Adjust image resizer from 100,300 to 256,768, keeping the aspect ratio.
+  -Changed the convolutional_box_predictor to weight_shared_convolutional_box_predictor.
+  -Added a cosine_decay to our learning rate.
+  -Added 2 more data augmentation, random_adjust_contrast and random_image_scale.
+
+We then trained the model from scratch, for 38367 steps, which gives us a public leaderboard score of 0.3426
+
 Short Description of Selected Submission #2:
-E.g., Based on the trained model from Submission #1, we modify the anchor aspect ratio to …, then
-refine the model by 10k steps, after that, we modify the learning rate to …, then further refine the
-model by 5k steps, which gives us public leaderboard score 0.2983. 
+Based on the trained model from submission 1,
+we modified the following:
+  - Modified anchor aspect ratio from 1.0, 2.0, 0.5 to 1.0, 2.43, 0.41
+  - Change "random_adjust_constrast" data augmentation to "random_distort_color"
+
+We then resume training, starting from ckpt 38367 from previous submission for ** steps which gives us a public leaderboard score of **
