@@ -1,0 +1,16 @@
+Team Name: Lord Bak
+Team Members: 
+Private Github Repo Link: https://github.com/ALim95/object_detection
+Github Tag for Selected Submission #1: 14a5c71649c67c892d4ee67fea3296ed8cccba14
+Returned Checksum for Selected Submission #1: 36b7e6ae749b96906d7327bf15a7d762
+Github Tag for Selected Submission #2:
+Returned Checksum for Selected Submission #2:
+
+
+Short Description of Selected Submission #1:
+E.g., we modified the backbone mobilenet_v1 to mobilenet_v2, then train the model from the scratch
+until 40k steps, which gives us public leaderboard score 0.2453
+Short Description of Selected Submission #2:
+E.g., Based on the trained model from Submission #1, we modify the anchor aspect ratio to …, then
+refine the model by 10k steps, after that, we modify the learning rate to …, then further refine the
+model by 5k steps, which gives us public leaderboard score 0.2983. 
