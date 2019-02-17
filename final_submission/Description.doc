@@ -23,5 +23,7 @@ Based on the trained model (step 38367) from submission 1,
 we modified the following:
   - Modified anchor aspect ratio from 1.0, 2.0, 0.5 to 1.0, 2.43, 0.41
   - Change "random_adjust_constrast" data augmentation to "random_distort_color"
+  - total_steps in Learning Rate cosine_decay
 
-We then resume training, starting from ckpt 38367 from previous submission for an additional 26263 steps(Till step 64630) which gives us a public leaderboard score of 0.3671
+We then resume training, starting from ckpt 38367 from previous submission for an additional 26263 steps(Till step 64630) which gives us a public leaderboard score of 0.3671.
+
